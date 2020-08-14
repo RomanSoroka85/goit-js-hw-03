@@ -21,7 +21,7 @@ const findBestEmployee = function (employees) {
   for (let i = 0; i < name.length; i += 1) {
     if (name[i][1] > score) {
       score = name[i][1];
-      winner = name[i];
+      winner = name[i][0];
     }
   }
   return winner;
